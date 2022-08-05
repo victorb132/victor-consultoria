@@ -14,6 +14,7 @@ const NeonText = styled.p`
     0 0 151px #000;
   align-self: center;
   font-size: 50px;
+  text-align: center;
 `;
 
 const Container = styled.div`
@@ -22,6 +23,7 @@ const Container = styled.div`
   height: 100vh;
   flex-direction: column;
   background-color: black;
+  padding: 10px;
 `;
 
 
