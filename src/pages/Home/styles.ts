@@ -2,10 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  /* height: 100vh; */
-  width: 100%;
   flex-direction: column;
-  padding: 10px;
-  background: white;
+  width: 100%;
+  padding: 2rem;
+`
+export const Title = styled.h1`
+  color: ${(props) => props.theme.secondary};
+`
+
+export const Subtitle = styled.h2`
+  font-weight: 100;
 `
