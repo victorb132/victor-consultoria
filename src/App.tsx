@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './styles/global'
 
-import { Home } from './presentation/home'
+import { Home } from './presentation/pages/home'
 
 import { defaultTheme } from './styles/themes/default'
 

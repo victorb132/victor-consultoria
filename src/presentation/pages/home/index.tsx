@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import React, { useEffect } from 'react'
+import { GetRepositories } from '../../../domain/usecases/get-repositories'
 
 const NeonText = styled.p`
   color: #fff;
@@ -16,7 +18,23 @@ const Container = styled.div`
   padding: 10px;
 `
 
+interface Props {
+  getRepositories: GetRepositories
+}
+
 export function Home() {
+  const getRepositoriesFunction = async () => {
+    const teste = await getRepositories.get({
+      username: 'victorb132',
+    })
+
+    console.log(teste)
+  }
+
+  useEffect(() => {
+    getRepositoriesFunction()
+  }, [])
+
   return (
     <Container>
       <NeonText>Este site encontra-se em desenvolvimento</NeonText>
