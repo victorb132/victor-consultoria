@@ -28,6 +28,7 @@ export const Container = styled.header`
 
       border: 0.1px solid transparent;
       border-radius: 10%;
+      font-weight: 300;
 
       &:hover {
         transition: border 1s;
