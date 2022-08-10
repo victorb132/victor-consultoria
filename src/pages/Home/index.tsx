@@ -2,37 +2,23 @@ import { useAllPrismicDocumentsByType } from '@prismicio/react'
 import { useEffect, useState } from 'react'
 import { Container, Title, Subtitle } from './styles'
 
-interface HomePrismic {
-  data: {
-    title: [
-      {
-        text: string
-      },
-    ]
-    subtitle: [
-      {
-        text: string
-      },
-    ]
-  }
-}
-
 export function Home() {
-  const [documents, { state, error }] = useAllPrismicDocumentsByType('home')
+  const [documents, { state }] = useAllPrismicDocumentsByType('home')
   const [header, setHeader] = useState({
     title: '',
     subTitle: '',
   })
 
-  console.log('result', state)
-  console.log('result', error)
+  const prismicData = ({ data }: any) => {
+    setHeader({
+      title: data.title[0].text,
+      subTitle: data.subtitle[0].text,
+    })
+  }
 
   useEffect(() => {
-    if (state === 'loaded') {
-      setHeader({
-        title: documents[0].data.title[0].text,
-        subTitle: documents[0].data.subtitle[0].text,
-      })
+    if (state === 'loaded' && documents?.length) {
+      prismicData(documents[0])
     }
   }, [documents, state])
 
