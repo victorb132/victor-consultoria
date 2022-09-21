@@ -1,8 +1,6 @@
 import { Container, Title, Subtitle, CardContainer } from './styles'
 
 export function Services({ data }: any) {
-  console.log(data)
-
   return (
     <Container>
       <CardContainer>

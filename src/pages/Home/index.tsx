@@ -9,6 +9,8 @@ import {
   Text,
 } from './styles'
 import { OurServices } from '../OurServices'
+import { About } from '../About'
+import { OurGalery } from '../OurGalery'
 
 export function Home() {
   const [documents, { state }] = useAllPrismicDocumentsByType('home')
@@ -45,6 +47,8 @@ export function Home() {
         <img src={header.image} alt="Imagem de uma barbeiro" />
       </HomeContainer>
       <OurServices />
+      <About />
+      <OurGalery />
     </Container>
   )
 }
