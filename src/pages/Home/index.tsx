@@ -11,6 +11,7 @@ import {
 import { OurServices } from '../OurServices'
 import { About } from '../About'
 import { OurGalery } from '../OurGalery'
+import { Contacts } from '../Contacts'
 
 export function Home() {
   const [documents, { state }] = useAllPrismicDocumentsByType('home')
@@ -49,6 +50,7 @@ export function Home() {
       <OurServices />
       <About />
       <OurGalery />
+      <Contacts />
     </Container>
   )
 }
