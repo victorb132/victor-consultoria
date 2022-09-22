@@ -7,7 +7,7 @@ export const Container = styled.header`
   padding: 3rem 8rem;
 
   img {
-    width: 3rem;
+    width: auto;
     height: 3rem;
   }
 
@@ -27,6 +27,8 @@ export const Container = styled.header`
   }
 `
 
-export const ButtonAppointment = styled.button`
+export const ButtonAppointment = styled.a`
   padding: 0.3rem;
+  background-color: ${(props) => props.theme.primary};
+  border-radius: 5px;
 `

@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0rem 0rem 0rem 5rem;
+  padding: 0rem 2rem 0rem 2rem;
   align-items: center;
 
   img {
@@ -27,22 +27,24 @@ export const TextContainer = styled.div`
 `
 
 export const Title = styled.h1`
-  color: ${(props) => props.theme.secondary};
-  font-weight: bold;
-  font-family: 'Merienda', 'sans-serif';
+  color: ${(props) => props.theme.primary};
+  font-weight: 700;
+  font-family: 'Montserrat', 'sans-serif';
   font-size: 2rem;
   letter-spacing: 2px;
 `
 
 export const Subtitle = styled.h1`
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2rem;
-  font-family: 'Merienda';
+  font-family: 'Montserrat', 'sans-serif';
   margin-top: 10px;
 `
 
 export const Text = styled.p`
   margin-top: 10px;
   font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Montserrat', 'sans-serif';
   letter-spacing: 2px;
 `

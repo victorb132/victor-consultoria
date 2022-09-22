@@ -20,12 +20,14 @@ export const CardContainer = styled.div`
 `
 
 export const Title = styled.h1`
-  color: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.primary};
   font-weight: bold;
   font-size: 1rem;
+  margin-top: 20px;
 `
 
 export const Subtitle = styled.h1`
+  color: ${(props) => props.theme.background};
   font-weight: 300;
   font-size: 1rem;
   text-align: center;
