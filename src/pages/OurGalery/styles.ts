@@ -20,7 +20,7 @@ export const TextContainer = styled.div`
 
 export const OurGaleryContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 0rem 10rem;
   margin-top: 50px;
   border-radius: 50%;
@@ -38,4 +38,15 @@ export const Subtitle = styled.h1`
   font-weight: 400;
   font-size: 3rem;
   font-family: 'Montserrat', 'sans-serif';
+`
+
+export const ButtonAppointment = styled.a`
+  padding: 1.5rem;
+  background-color: ${(props) => props.theme.primary};
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 50%;
+  align-self: center;
+  text-align: center;
+  font-size: 25px;
 `

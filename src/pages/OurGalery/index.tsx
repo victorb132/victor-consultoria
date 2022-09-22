@@ -7,6 +7,7 @@ import {
   OurGaleryContainer,
   Title,
   Subtitle,
+  ButtonAppointment,
 } from './styles'
 
 export function OurGalery() {
@@ -51,6 +52,16 @@ export function OurGalery() {
       </TextContainer>
       <OurGaleryContainer>
         <PhotoAlbum photos={ourGalery.galery} columns={4} layout="masonry" />
+        <ButtonAppointment
+          type="button"
+          onClick={() =>
+            window
+              .open('https://www.instagram.com/barbeariahonoris/', '_blank')
+              ?.focus()
+          }
+        >
+          Ver Mais +
+        </ButtonAppointment>
       </OurGaleryContainer>
     </Container>
   )

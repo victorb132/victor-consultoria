@@ -21,7 +21,6 @@ export const HomeContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* padding-top: 5rem; */
   overflow: hidden;
   width: 25rem;
 `
