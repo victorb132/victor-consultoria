@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo-honoris-branco.png'
 
 import { Container, ButtonAppointment } from './styles'
 
@@ -12,7 +12,19 @@ export function Header() {
         <a>Portfólio</a>
         <a>Serviços</a>
       </nav>
-      <ButtonAppointment type="button">Agendar</ButtonAppointment>
+      <ButtonAppointment
+        type="button"
+        onClick={() =>
+          window
+            .open(
+              'https://admin.frizzar.com.br/app/barbeariahonoris?acao=passo1',
+              '_blank',
+            )
+            ?.focus()
+        }
+      >
+        Agendar
+      </ButtonAppointment>
     </Container>
   )
 }

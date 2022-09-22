@@ -8,7 +8,6 @@ import {
   Title,
   Subtitle,
 } from './styles'
-import { Galery } from '../../components/Galery'
 
 export function OurGalery() {
   const [documents, { state }] = useAllPrismicDocumentsByType('ourgalery')
@@ -51,12 +50,7 @@ export function OurGalery() {
         <Title>{ourGalery?.title}</Title>
       </TextContainer>
       <OurGaleryContainer>
-        <PhotoAlbum
-          photos={ourGalery.galery}
-          columns={3}
-          layout="masonry"
-          spacing={100}
-        />
+        <PhotoAlbum photos={ourGalery.galery} columns={4} layout="masonry" />
       </OurGaleryContainer>
     </Container>
   )
