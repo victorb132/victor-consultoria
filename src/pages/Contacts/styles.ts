@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: space-between;
   color: ${(props) => props.theme.background};
   padding: 5rem 7.5rem 6rem 7.5rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `
 
 export const Title = styled.h3`

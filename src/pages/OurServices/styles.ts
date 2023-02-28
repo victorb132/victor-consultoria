@@ -20,6 +20,12 @@ export const ServiceContainer = styled.div`
   padding: 1rem;
   justify-content: space-around;
   margin-top: 50px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 `
 
 export const Title = styled.h1`
@@ -27,6 +33,11 @@ export const Title = styled.h1`
   font-weight: 700;
   font-family: 'Montserrat', 'sans-serif';
   font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 `
 
 export const Subtitle = styled.h1`
@@ -34,4 +45,9 @@ export const Subtitle = styled.h1`
   font-weight: 400;
   font-size: 3rem;
   font-family: 'Montserrat', 'sans-serif';
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 `
