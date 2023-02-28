@@ -17,6 +17,12 @@ export const AboutContainer = styled.div`
     width: 40rem;
     height: 30rem;
   }
+
+  @media (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
 `
 
 export const TextContainer = styled.div`

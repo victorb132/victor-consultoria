@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin: 2rem 0 0 0;
+  }
 `
 
 export const CardContainer = styled.div`

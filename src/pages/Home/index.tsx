@@ -1,6 +1,6 @@
 import { useAllPrismicDocumentsByType } from '@prismicio/react'
 import { useEffect, useState } from 'react'
-import Lottie from 'lottie-react'
+// import Lottie from 'lottie-react'
 import {
   Container,
   HomeContainer,
@@ -13,7 +13,7 @@ import { OurServices } from '../OurServices'
 import { About } from '../About'
 import { OurGalery } from '../OurGalery'
 import { Contacts } from '../Contacts'
-import barber from '../../assets/animations/barber.json'
+// import barber from '../../assets/animations/barber.json'
 
 export function Home() {
   const [documents, { state }] = useAllPrismicDocumentsByType('home')
@@ -39,25 +39,19 @@ export function Home() {
     }
   }, [documents, state])
 
-  const AnimationLoading = () => {
-    return <Lottie animationData={barber} loop />
-  }
+  // const AnimationLoading = () => {
+  //   return <Lottie animationData={barber} loop />
+  // }
 
   return (
     <Container>
       <HomeContainer>
-        {state === 'loaded' ? (
-          <>
-            <TextContainer>
-              <Title>{header.title}</Title>
-              <Subtitle>{header.subTitle}</Subtitle>
-              <Text>{header.text}</Text>
-            </TextContainer>
-            <img src={header.image} alt="Imagem de uma barbeiro" />
-          </>
-        ) : (
-          AnimationLoading()
-        )}
+        <TextContainer>
+          <Title>{header.title}</Title>
+          <Subtitle>{header.subTitle}</Subtitle>
+          <Text>{header.text}</Text>
+        </TextContainer>
+        <img src={header.image} alt="Imagem de uma barbeiro" />
       </HomeContainer>
       <OurServices />
       <About />

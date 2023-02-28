@@ -8,13 +8,22 @@ export const Container = styled.div`
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 5rem 7.5rem 6rem 7.5rem;
+  padding: 40px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   img {
     width: auto;
-    height: 30rem;
+    height: 20rem;
+
+    @media (max-width: 768px) {
+      height: 10rem;
+      margin: 2rem 0 0 0;
+    }
   }
 `
 
@@ -27,19 +36,37 @@ export const TextContainer = styled.div`
 
 export const Title = styled.h1`
   color: ${(props) => props.theme.primary};
-  font-weight: 700;
+  font: 700 3rem;
   font-family: 'Montserrat', 'sans-serif';
   font-size: 3rem;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 `
 
 export const Subtitle = styled.h1`
   font-weight: 400;
-  font-size: 3rem;
   font-family: 'Montserrat', 'sans-serif';
+  font-size: 3rem;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 `
 
 export const Text = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   font-family: 'Montserrat', 'sans-serif';
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+  }
 `
